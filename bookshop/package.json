@@ -15,9 +15,17 @@
   },
   "cds": {
     "requires": {
-      "db": {
-        "kind": "sql"
-      }
+        "db": {
+            "kind": "sql"
+        },
+        "uaa": {
+            "kind": "xsuaa"
+        }
+    },
+    "auth": {
+        "passport": {
+            "strategy": "JWT"
+        }
     }
   }
 }
